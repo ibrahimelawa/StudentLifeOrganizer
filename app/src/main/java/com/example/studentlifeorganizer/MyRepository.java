@@ -2,6 +2,9 @@ package com.example.studentlifeorganizer;
 
 import android.app.Application;
 
+import androidx.lifecycle.LiveData;
+import androidx.room.Query;
+
 public class MyRepository {
     private final UserDao userDao;
     MyRepository(Application application) {
@@ -33,4 +36,8 @@ public class MyRepository {
     User getlogin(String email,String password){
         return userDao.login( email,password);
     }
+
+
+
+
 }

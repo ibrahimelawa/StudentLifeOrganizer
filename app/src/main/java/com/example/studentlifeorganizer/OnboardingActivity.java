@@ -1,7 +1,5 @@
 package com.example.studentlifeorganizer;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -31,7 +29,7 @@ public class OnboardingActivity extends AppCompatActivity {
                 findViewById(R.id.next_button).setOnClickListener(v -> navigateToNextScreen());
                 break;
             default:
-                Intent intent = new Intent(OnboardingActivity.this, MainActivity.class);
+                Intent intent = new Intent(OnboardingActivity.this, Sing_in.class);
                 startActivity(intent);
                 finish();
                 break;
