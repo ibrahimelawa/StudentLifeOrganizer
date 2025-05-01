@@ -31,7 +31,7 @@ public class OnboardingActivity extends AppCompatActivity {
                 findViewById(R.id.next_button).setOnClickListener(v -> navigateToNextScreen());
                 break;
             default:
-                Intent intent = new Intent(OnboardingActivity.this, MainActivity.class);
+                Intent intent = new Intent(OnboardingActivity.this, Singin.class);
                 startActivity(intent);
                 finish();
                 break;

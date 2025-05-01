@@ -52,16 +52,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/et_password"
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:background="@drawable/btn_shap2"
-        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawableLeft="@drawable/baseline_email_24"
         android:ems="10"
-        android:hint="Password"
+        android:hint="email"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -69,36 +69,38 @@
         app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <EditText
-        android:id="@+id/et_email"
+        android:id="@+id/et_password"
         android:layout_width="match_parent"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/btn_shap2"
-        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawableLeft="@drawable/baseline_password_24"
         android:ems="10"
-        android:hint="Email"
+        android:hint="password"
         android:padding="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
     <TextView
         android:id="@+id/tv_singup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="64dp"
         android:background="@drawable/btn_shap"
         android:padding="15dp"
-        android:layout_margin="15dp"
-        android:text="Sing up"
+        android:text="Register"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="515dp" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <TextView
         android:id="@+id/textView11"
