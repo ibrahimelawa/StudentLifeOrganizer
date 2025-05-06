@@ -7,52 +7,15 @@
     android:layout_height="match_parent"
     android:background="#F5F5F5">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="16dp"
-        android:layoutDirection="ltr"
-        android:gravity="center_vertical">
-
-        <ImageView
-            android:id="@+id/profileImage"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/circle_background"
-            android:contentDescription="Profile"
-            android:padding="4dp"
-            android:src="@drawable/ic_profile" />
-
-        <TextView
-            android:id="@+id/welcomeText"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Welcome"
-            android:textSize="18sp"
-            android:textColor="@color/black" />
-
-        <ImageView
-            android:id="@+id/img_notification"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/circle_background"
-            android:contentDescription="Notifications"
-            android:padding="4dp"
-            android:src="@drawable/ic_notification" />
-
-    </LinearLayout>
-
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchView"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_margin="16dp"
-        android:background="@drawable/search_background"
         android:queryHint="Search"
-        app:iconifiedByDefault="false" />
+        app:iconifiedByDefault="false"
+        android:background="@drawable/search_background" />
 
     <LinearLayout
         android:layout_width="match_parent"
