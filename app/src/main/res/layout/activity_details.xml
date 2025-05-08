@@ -5,7 +5,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F5F5">
+    android:background="@drawable/gradient_background"
+    >
 
 
     <androidx.appcompat.widget.SearchView
@@ -22,7 +23,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:background="@drawable/btn_shap2"
+        android:background="@color/nav_unselected"
         android:paddingHorizontal="16dp"
         android:paddingTop="8dp">
 
@@ -235,6 +236,5 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 </LinearLayout>

@@ -51,7 +51,7 @@ public class Singin extends AppCompatActivity {
                     }
                     runOnUiThread(() -> {
                         Toast.makeText(Singin.this, "تم تسجيل الدخول بنجاح", Toast.LENGTH_SHORT).show();
-                         Intent intent=new Intent(Singin.this,HomeActivitey.class);
+                         Intent intent=new Intent(Singin.this,MainActivity.class);
                          startActivity(intent);
                     });
                 } else {
@@ -79,7 +79,7 @@ public class Singin extends AppCompatActivity {
         binding.tvCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent=new Intent(Singin.this, SingUp.class);
+               Intent intent=new Intent(Singin.this, Sing_Up.class);
                startActivity(intent);
             }
         });
