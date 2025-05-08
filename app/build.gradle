@@ -1,15 +1,16 @@
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace 'com.example.studentlifeorganizer'
-    compileSdk 35
+    compileSdk 35 // استخدم أحدث SDK
 
     defaultConfig {
         applicationId "com.example.studentlifeorganizer"
         minSdk 24
-        targetSdk 34
+        targetSdk 34 // أو أحدث
         versionCode 1
         versionName "1.0"
 
@@ -27,17 +28,32 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8 // أو JavaVersion.VERSION_11 أو أعلى إذا كنت تستخدم ميزات Java الأحدث
+        targetCompatibility JavaVersion.VERSION_1_8 // أو JavaVersion.VERSION_11 أو أعلى
     }
 }
 
 dependencies {
 
     implementation libs.appcompat
-    implementation libs.material
+    // استخدم تبعية Material واحدة فقط، ويفضل الأحدث
+    implementation libs.material // تأكد من أن libs.material يشير إلى الإصدار الأحدث في Version Catalog
     implementation libs.activity
     implementation libs.constraintlayout
+
+    // حافظ على تبعيات Firebase Auth و Google Sign-In
+    // قم بتحديث هذه التبعيات إلى أحدث الإصدارات المستقرة
+    implementation 'com.google.firebase:firebase-auth:22.2.0' // تحقق من أحدث إصدار
+    implementation 'com.google.android.gms:play-services-auth:20.7.0' // تحقق من أحدث إصدار
+
+    // إذا كنت تستخدم Firebase Analytics أو ميزات أخرى تعتمد على Firebase Core، فاحتفظ بها،
+    // وإلا فقد لا تحتاج إليها بشكل صريح في الإصدارات الأحدث.
+    // إذا احتجت إليها، تحقق من أحدث إصدار.
+    // implementation 'com.google.firebase:firebase-core:21.1.1' // تحقق من أحدث إصدار إذا لزم الأمر
+
+    implementation libs.credentials
+    implementation libs.credentials.play.services.auth
+    implementation libs.googleid
 //    implementation libs.room.common.jvm
 //    implementation libs.room.runtime.android
 //    implementation libs.room.runtime.jvm
@@ -45,18 +61,18 @@ dependencies {
     androidTestImplementation libs.ext.junit
     androidTestImplementation libs.espresso.core
     // Room components
-    implementation "androidx.room:room-runtime:$rootProject.roomVersion"
-    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
+    implementation "androidx.room:room-runtime:$rootProject.roomVersion" // تأكد من تحديث roomVersion في ملف المشروع
+    annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion" // تأكد من تحديث roomVersion في ملف المشروع
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
 
     // Lifecycle components
-    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.lifecycleVersion"
-    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.lifecycleVersion" // تأكد من تحديث lifecycleVersion في ملف المشروع
+    implementation "androidx.lifecycle:lifecycle-livedata:$rootProject.lifecycleVersion" // تأكد من تحديث lifecycleVersion في ملف المشروع
+    implementation "androidx.lifecycle:lifecycle-common-java8:$rootProject.lifecycleVersion" // تأكد من تحديث lifecycleVersion في ملف المشروع
 
     // UI
-    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
-    implementation "com.google.android.material:material:$rootProject.materialVersion"
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion" // تأكد من تحديث constraintLayoutVersion في ملف المشروع
+    // تم حذف التبعية المكررة لـ material
+
 }
