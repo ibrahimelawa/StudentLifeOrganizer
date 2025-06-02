@@ -3,6 +3,8 @@ package com.example.studentlifeorganizer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -38,6 +40,22 @@ public class Login extends AppCompatActivity {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         findViewById(R.id.btn_google).setOnClickListener(view -> signInWithGoogle());
+        Button btnSingIn=  findViewById(R.id.btn_singIn);
+        TextView tvSingUp=findViewById(R.id.tv_singUp);
+        btnSingIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Login.this,Sing_in.class);
+                startActivity(intent);
+            }
+        });
+        tvSingUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Login.this, Sing_Up.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void signInWithGoogle() {

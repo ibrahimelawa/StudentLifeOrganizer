@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1089171206565",
+    "project_id": "studentlife-b18a8",
+    "storage_bucket": "studentlife-b18a8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089171206565:android:7168c22b9d51d8d637b84c",
+        "android_client_info": {
+          "package_name": "com.example.studentlifeorganizer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089171206565-091anbnub1c1cnn6l8i6dgd8osvsg0lk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0OYRA-RPDRCY32GF-Go309D8bphW78u0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089171206565-091anbnub1c1cnn6l8i6dgd8osvsg0lk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

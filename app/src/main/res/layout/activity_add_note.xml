@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:text="Add Notes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="Required in the exam :"
+        android:layout_marginTop="32dp"
+        android:textSize="17sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="7dp"
+        android:minLines="6"
+        android:background="@drawable/btn_editetexte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:text="Save"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#6495ED"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="48dp" />
+</LinearLayout>
