@@ -12,6 +12,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
+            android:id="@+id/img_back"
             android:src="@drawable/baseline_arrow_back_24"
             android:layout_width="24dp"
             android:layout_height="24dp" />
@@ -111,12 +112,18 @@
             android:layout_height="50dp" />
 
         <Button
-            android:text="Save"
-            android:layout_marginTop="32dp"
-            android:layout_gravity="center"
-            android:backgroundTint="#6495ED"
-            android:textColor="#FFFFFF"
+            android:id="@+id/btn_save"
             android:layout_width="150dp"
-            android:layout_height="48dp" />
+            android:layout_height="60dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="4dp"
+            android:padding="12dp"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#5D84CD"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
     </LinearLayout>
 </ScrollView>

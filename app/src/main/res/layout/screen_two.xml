@@ -24,19 +24,23 @@
         android:text=" Keep track of your assignments and homework effectively!"
         android:textColor="#000"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/illustration" />
 
-    <Button
+    <TextView
         android:id="@+id/next_button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="37dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="#3B83F6"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/gradient_bg"
         android:text="Next"
-        android:textColor="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

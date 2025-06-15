@@ -63,5 +63,12 @@ public class DetailsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        binding.imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(DetailsActivity.this, MainActivity.class);
+                startActivity(intent1);
+            }
+        });
     }
 }

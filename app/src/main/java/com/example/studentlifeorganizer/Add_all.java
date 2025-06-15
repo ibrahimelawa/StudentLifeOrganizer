@@ -13,12 +13,12 @@ import androidx.core.view.WindowInsetsCompat;
 import com.example.studentlifeorganizer.databinding.ActivityAddAllBinding;
 
 public class Add_all extends AppCompatActivity {
+
     ActivityAddAllBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         binding=ActivityAddAllBinding.inflate(getLayoutInflater());
         super.onCreate(savedInstanceState);
-
         setContentView(binding.getRoot());
         binding.cvLecture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -26,6 +26,7 @@ public class Add_all extends AppCompatActivity {
                 Intent intent=new Intent(Add_all.this, Add_lectures.class);
                 startActivity(intent);
             }
+
         });
         binding.cvNots.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,6 +54,13 @@ public class Add_all extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(Add_all.this, AddTaskeAndHomework.class);
                 startActivity(intent);
+            }
+        });
+        binding.imgBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1=new Intent(Add_all.this, DetailsActivity.class);
+                startActivity(intent1);
             }
         });
     }

@@ -7,8 +7,16 @@
     android:padding="16dp"
     android:background="#FFFFFF">
 
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        android:layout_marginBottom="16dp" />
 
     <androidx.cardview.widget.CardView
+
         android:id="@+id/cv_lecture"
         android:layout_marginTop="60dp"
         android:layout_width="match_parent"
@@ -21,24 +29,29 @@
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#143AEF"
+            android:background="@drawable/gradient_bg"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="12dp">
+            android:gravity="center_vertical"
+
+            >
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/img_1"
-            android:layout_marginEnd="12dp"/>
+                android:src="@drawable/img_add_lectures"
+                android:layout_marginStart="30dp"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Add a lecture"
-                android:textSize="18sp"
+                android:textColor="#484747"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF" />
+                android:layout_marginStart="50dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -55,24 +68,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#143AEF"
+            android:background="@drawable/gradient_bg"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="12dp">
+            android:gravity="center_vertical"
+           >
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/tasks_and_duties"
-                android:layout_marginEnd="12dp"/>
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="30dp"
+
+                android:src="@drawable/img__add_taske_and_homework" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Tasks"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF" />
+                android:textColor="#484747"
+                android:layout_marginStart="50dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -88,24 +104,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#143AEF"
+            android:background="@drawable/gradient_bg"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="12dp">
+            android:gravity="center_vertical"
+           >
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/projects"
-                android:layout_marginEnd="12dp"/>
+                android:src="@drawable/img__add_projects"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="30dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Project"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF" />
+                android:textColor="#484747"
+                android:layout_marginStart="50dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -122,24 +141,27 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#143AEF"
+            android:background="@drawable/gradient_bg"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="12dp">
+            android:gravity="center_vertical"
+            >
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/exam_dates"
-                android:layout_marginEnd="12dp"/>
+                android:src="@drawable/img_add_exam_dates"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="30dp"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Exam Dates"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF" />
+                android:textColor="#484747"
+                android:layout_marginStart="50dp"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -155,25 +177,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#143AEF"
+            android:background="@drawable/gradient_bg"
             android:orientation="horizontal"
-            android:gravity="center"
-            android:padding="12dp">
+            android:gravity="center_vertical"
+            >
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:src="@drawable/notes"
-                android:layout_marginEnd="12dp"/>
+                android:src="@drawable/img_add_note"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="30dp"
+
+                />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Add Notes"
-                android:textSize="18sp"
+                android:textColor="#484747"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:textColor="#FFFFFF" />
+                android:layout_marginStart="50dp"/>
         </LinearLayout>
+
     </androidx.cardview.widget.CardView>
+
+
+
 
 </LinearLayout>

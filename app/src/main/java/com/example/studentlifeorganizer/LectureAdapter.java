@@ -13,6 +13,9 @@ public class LectureAdapter extends RecyclerView.Adapter<LectureAdapter.LectureV
     private List<Lecture> lectureList;
     private OnItemClickListener listener;
 
+    public LectureAdapter(List<Calendar> calendarList) {
+    }
+
     public interface OnItemClickListener {
         void onItemClick(Lecture lecture);
     }

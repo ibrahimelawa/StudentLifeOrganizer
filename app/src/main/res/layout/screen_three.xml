@@ -1,5 +1,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF">
@@ -23,21 +24,26 @@
         android:text=" Easily jot down your personal thoughts and notes!"
         android:textColor="#000"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/illustration" />
 
-    <Button
+    <TextView
         android:id="@+id/next_button"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="166dp"
+        android:layout_height="37dp"
         android:layout_marginTop="100dp"
-        android:backgroundTint="#3B83F6"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/gradient_bg"
         android:text="Next"
-        android:textColor="#FFF"
+        android:gravity="center"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/description" />
+        app:layout_constraintTop_toBottomOf="@id/description"
+        app:layout_constraintVertical_bias="0.551" />
 </androidx.constraintlayout.widget.ConstraintLayout>

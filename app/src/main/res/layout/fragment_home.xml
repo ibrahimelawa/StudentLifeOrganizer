@@ -18,16 +18,16 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/img_profile"
+        app:layout_constraintEnd_toStartOf="@+id/img_notification"
         app:layout_constraintHorizontal_bias="0"
         android:layout_marginEnd="8dp" />
 
     <ImageView
-        android:id="@+id/img_profile"
+        android:id="@+id/img_notification"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_profile"
+        android:src="@drawable/ic_notification"
         android:contentDescription="Profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBaseline_toBaselineOf="@id/tv_greeting" />

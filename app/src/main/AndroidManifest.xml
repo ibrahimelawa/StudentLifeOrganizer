@@ -15,6 +15,12 @@
         android:theme="@style/Theme.StudentLifeOrganizer"
         tools:targetApi="31">
         <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerView_Calendar"
+            android:exported="false" />
+        <activity
             android:name=".Tasks"
             android:exported="false" />
         <activity

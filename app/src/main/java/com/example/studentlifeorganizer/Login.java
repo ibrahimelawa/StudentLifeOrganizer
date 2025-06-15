@@ -40,7 +40,7 @@ public class Login extends AppCompatActivity {
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
 
         findViewById(R.id.btn_google).setOnClickListener(view -> signInWithGoogle());
-        Button btnSingIn=  findViewById(R.id.btn_singIn);
+        TextView btnSingIn=  findViewById(R.id.btn_singIn);
         TextView tvSingUp=findViewById(R.id.tv_singUp);
         btnSingIn.setOnClickListener(new View.OnClickListener() {
             @Override

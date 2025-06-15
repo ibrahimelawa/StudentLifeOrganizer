@@ -8,6 +8,7 @@
 
 
     <ImageView
+        android:id="@+id/img_back"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:src="@drawable/baseline_arrow_back_24"
@@ -29,24 +30,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Name of the material"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="60dp"
         android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textSize="15sp"
+        android:textStyle="normal"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_editetexte"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Material details"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textSize="15sp"
+        android:textStyle="normal"/>
 
     <EditText
         android:layout_width="match_parent"
@@ -54,6 +58,7 @@
         android:gravity="top"
         android:inputType="textMultiLine"
         android:background="@drawable/btn_editetexte"
+        android:layout_marginTop="10dp"
         android:padding="12dp" />
 
 
@@ -63,13 +68,15 @@
         android:text="Teacher's name"
         android:layout_marginTop="16dp"
         android:textColor="#000000"
-        android:textSize="14sp" />
+        android:textSize="15sp"
+        android:textStyle="normal" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/btn_editetexte"
-        android:padding="12dp" />
+        android:padding="12dp"
+        android:layout_marginTop="10dp"/>
 
 
     <LinearLayout
@@ -89,13 +96,15 @@
                 android:layout_height="wrap_content"
                 android:text="Lecture date"
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="15sp"
+                android:textStyle="normal"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_editetexte"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
 
         <Space
@@ -113,25 +122,31 @@
                 android:layout_height="wrap_content"
                 android:text="Hall name"
                 android:textColor="#000000"
-                android:textSize="14sp" />
+                android:textSize="15sp"
+                android:textStyle="normal" />
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/btn_editetexte"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </LinearLayout>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Save"
-        android:layout_marginTop="32dp"
-        android:backgroundTint="#143AEF"
-        android:textColor="#FFFFFF"
+        android:id="@+id/btn_save"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="4dp"
         android:padding="12dp"
-        android:background="@drawable/btn_editetexte" />
+        android:text="Save"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#5D84CD"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
 </LinearLayout>
