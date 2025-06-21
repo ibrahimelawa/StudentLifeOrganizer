@@ -9,6 +9,8 @@ public class User {
     @PrimaryKey(autoGenerate = true)
     public int id;
     public String UserName;
+    public String Email;
+    public  String Password;
 
     public int getId() {
         return id;
@@ -52,6 +54,5 @@ public class User {
         Password = password;
     }
 
-    public String Email;
-    public  String Password;
+
 }
